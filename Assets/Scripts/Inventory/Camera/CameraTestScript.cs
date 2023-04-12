@@ -9,7 +9,7 @@ public class CameraTestScript : MonoBehaviour
 	public GameObject player;
 	public float sensitivity;
 
-	void Start()
+	/*void Start()
 	{
 		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
@@ -21,7 +21,7 @@ public class CameraTestScript : MonoBehaviour
 			Cursor.visible = true;
 			Cursor.lockState = CursorLockMode.None;
 		}
-	}
+	}*/
 	void FixedUpdate()
 	{
 		float rotateHorizontal = -Input.GetAxis("Mouse X");

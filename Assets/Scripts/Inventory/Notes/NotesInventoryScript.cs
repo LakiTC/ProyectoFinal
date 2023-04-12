@@ -26,7 +26,6 @@ public class NotesInventoryScript : MonoBehaviour
 			}
 		}
 		GameObject newItemGameObject = Instantiate(notePrefab, notesGrid);
-		newItemGameObject.name = note.name;
 		newItemGameObject.GetComponentInChildren<TextMeshProUGUI>().text = note.title;
 		newItemGameObject.GetComponent<Button>().onClick.AddListener(delegate { ChangeNote(note.content); });
 	}
